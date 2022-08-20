@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .calculadora {
+    box-shadow: 0 0 1em black;
     position: absolute;
     top: 50%;
     right: 50%;
@@ -43,4 +44,37 @@
 .c {
     background: #1C5D99;
     color: #fff;
+}
+
+/* Opção de cor de fundo */
+.light {
+    background-color: #fff;
+}
+.dark{
+    background-color: #222222;
+}
+
+/* Butões da opção */
+.btn1 {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    padding: 0.625rem;
+    cursor: pointer;
+}
+
+#btlight {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* botao dark */
+#btdark {
+    background-color: #263238;
+    color: #fff;
+    border: 1px solid #fff;
 }
