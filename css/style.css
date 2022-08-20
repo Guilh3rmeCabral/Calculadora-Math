@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 .calculadora {
-    box-shadow: 0 0 1em black;
     position: absolute;
     top: 50%;
     right: 50%;
@@ -13,6 +14,16 @@
     border-radius: 10px;
     overflow: hidden;
 }
+.shadow {
+    box-shadow: 0 0 1em black;
+}
+.calc {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+}
+
 #resultado {
     background-color: #183A59;
     color: #fff;
@@ -37,13 +48,28 @@
     background: #639FAB;
     color: #fff;
 }
+.a:hover {
+    background: #284F57;
+}
 .b {
     background: #1C3347;
     color: #fff;
 }
+.b:hover {
+    background: #132332;
+}
 .c {
     background: #1C5D99;
     color: #fff;
+}
+.c:hover {
+    background: #13395B;
+}
+.deletee img{
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    margin-right: 2px;
 }
 
 /* Opção de cor de fundo */
@@ -55,26 +81,54 @@
 }
 
 /* Butões da opção */
+.btn-cor p {
+    color: #1C5D99;
+    margin: 10px;
+    margin-right: 10px;
+    font-size: 15.5px;
+}
 .btn1 {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 10px;
-    margin-top: 10px;
+    width: 60px;
+    height: 30px;
+    margin: 10px 12px 0px 10px;
+    margin-top: -5px;
+    border-radius: 10px;
     border: none;
-    border-radius: 8px;
-    padding: 0.625rem;
     cursor: pointer;
+}
+.btn1:hover {
+    transform: translateX(5px) scale(1.0);
+    transform: translateY(5px) scale(1.0);
 }
 
 #btlight {
-    background: #fff;
-    color: #000;
-    border: 1px solid #000;
+    background: #1C5D99;
+    color: #fff;
 }
 
-/* botao dark */
 #btdark {
-    background-color: #263238;
+    background: #1C5D99;
     color: #fff;
-    border: 1px solid #fff;
+}
+
+/*Footer*/
+.redes {
+    display: flex;
+    justify-content: center;
+    margin-top: 800px;
+}
+
+.redes a {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    color: #1C5D99;
+}
+.copy p {
+    padding: 6px;
 }

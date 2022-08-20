@@ -8,8 +8,9 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <div class="cor-fundo">
-        <div class="calculadora">
+    <div class="texto">
+        <div class="calculadora shadow">
+            <p class="calc">CMS - Calculadora Matemática Básica</p>
             <p id="resultado"></p>
             <table>
                 <tr>
@@ -39,16 +40,31 @@
                 <tr>
                     <td><button class="btn b" onclick="insert('0')">0</button></td>
                     <td><button class="btn b" onclick="insert('.')">.</button></td>
-                    <td><button class="btn b" onclick="back()"><</button></td>
+                    <td><button class="btn b deletee" onclick="back()"><img src="img/deletee.svg"></button></td>
                     <td><button class="btn c" onclick="calcular()">=</button></td>
                 </tr>
             </table>
         </div>
         <div class="btn-cor">
+            <p>ESCOLHA SEU TEMA</p>
             <button class='modos btn1' id='btlight'>Light</button>
             <button class='modos btn1' id='btdark'>Dark</button>
         </div>
     </div>
+    <footer>
+        <div class="redes">
+            <a href="https://github.com/Guilh3rmeCabral"><img src="img/github.svg" alt="Link para meu github"></a>
+            <a href="https://www.linkedin.com/in/guilherme-cabral-971994209/"><img src="img/linkedin.svg" alt="Link para linkedin"></a>
+            <a href="https://www.instagram.com/_cabralgui_/"><img src="img/instagram.svg" alt="Link para meu instagram"></a>
+        </div>
+        <div class="copy">
+            <p>Condições de Uso</p>
+            <p>Notificação de Privacidade</p>
+            <p>Cookies</p>
+            <p>Baseados em estudo</p>
+            <p>&copy; 2022 Guilherme Cabral</p>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>

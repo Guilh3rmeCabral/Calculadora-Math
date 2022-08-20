@@ -28,12 +28,14 @@ var btnDark = document.querySelector('#btdark');
 btnDark.addEventListener('click', modoDark);
 btnLight.addEventListener('click', modoLight);
 
+
+
 function modoDark(){
-    tela.classList.add("dark")
-    tela.classList.remove("light")
+    tela.classList.add("dark");
+    tela.classList.remove("light");
 }
 
 function modoLight(){
-    tela.classList.remove("dark")
-    tela.classList.add("light")
+    tela.classList.remove("dark");
+    tela.classList.add("light");   
 }
