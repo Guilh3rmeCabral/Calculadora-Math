@@ -11,7 +11,7 @@
     <div class="texto">
         <div class="calculadora shadow">
             <p class="calc">CMB - Calculadora Matemática Básica</p>
-            <p id="resultado"></p>
+            <p id="resultado" dat></p>
             <table>
                 <tr>
                     <td><button class="btn a" onclick="clean()">AC</button></td>
@@ -47,8 +47,8 @@
         </div>
         <div class="btn-cor">
             <p>ESCOLHA SEU TEMA</p>
-            <button class='modos btn1' id='btlight'>Light</button>
-            <button class='modos btn1' id='btdark'>Dark</button>
+            <button class='modos btn1' id='btlight' onclick="changeTheme('light')">Light</button>
+            <button class='modos btn1' id='btdark' onclick="changeTheme('dark')">Dark</button>
         </div>
     </div>
     <footer>
